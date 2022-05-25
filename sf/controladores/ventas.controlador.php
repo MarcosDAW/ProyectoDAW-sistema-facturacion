@@ -93,7 +93,7 @@ class ControladorVentas{
 
 			$item1b = "ultima_compra";
 
-			date_default_timezone_set('America/Bogota');
+			date_default_timezone_set('Europe/Madrid');
 
 			$fecha = date('Y-m-d');
 			$hora = date('H:i:s');
@@ -266,7 +266,7 @@ class ControladorVentas{
 
 				$item1b_2 = "ultima_compra";
 
-				date_default_timezone_set('America/Bogota');
+				date_default_timezone_set('Europe/Madrid');
 
 				$fecha = date('Y-m-d');
 				$hora = date('H:i:s');
@@ -382,7 +382,7 @@ class ControladorVentas{
 			}else{
 
 				$item = "ultima_compra";
-				$valor = "0000-00-00 00:00:00";
+				$valor = "echo ";
 				$valorIdCliente = $traerVenta["id_cliente"];
 
 				$comprasCliente = ModeloClientes::mdlActualizarCliente($tablaClientes, $item, $valor, $valorIdCliente);

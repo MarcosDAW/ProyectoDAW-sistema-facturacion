@@ -84,7 +84,8 @@ class ControladorUsuarios{
 
 			if(preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nuevoNombre"]) &&
 			   preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoUsuario"]) &&
-			   preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoPassword"])){
+			   preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoPassword"]) &&
+			   !empty($_POST["nuevoPerfil"])){
 
 			   	/*VALIDAR IMAGEN*/
 
@@ -113,7 +114,7 @@ class ControladorUsuarios{
 
 						$ruta = "vistas/img/usuarios/".$_POST["nuevoUsuario"]."/".$aleatorio.".jpg";
 
-						$origen = imagecreatefromjpeg($_FILES["nuevaFoto"]["tmp_name"]);						
+						$origen = imagecreatefromjpeg($_FILES["nuevaFoto"]["tmp_name"]);
 
 						$destino = imagecreatetruecolor($nuevoAncho, $nuevoAlto);
 
@@ -125,9 +126,7 @@ class ControladorUsuarios{
 
 					if($_FILES["nuevaFoto"]["type"] == "image/png"){
 
-						/*=============================================
-						GUARDAMOS LA IMAGEN EN EL DIRECTORIO
-						=============================================*/
+						/*GUARDAMOS LA IMAGEN EN EL DIRECTORIO*/
 
 						$aleatorio = mt_rand(100,999);
 
@@ -217,9 +216,7 @@ class ControladorUsuarios{
 
 	}
 
-	/*=============================================
-	MOSTRAR USUARIO
-	=============================================*/
+	/*MOSTRAR USUARIO*/
 
 	static public function ctrMostrarUsuarios($item, $valor){
 
@@ -230,9 +227,7 @@ class ControladorUsuarios{
 		return $respuesta;
 	}
 
-	/*=============================================
-	EDITAR USUARIO
-	=============================================*/
+	/*EDITAR USUARIO*/
 
 	static public function ctrEditarUsuario(){
 
@@ -240,9 +235,7 @@ class ControladorUsuarios{
 
 			if(preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["editarNombre"])){
 
-				/*=============================================
-				VALIDAR IMAGEN
-				=============================================*/
+				/*VALIDAR IMAGEN*/
 
 				$ruta = $_POST["fotoActual"];
 
@@ -253,15 +246,11 @@ class ControladorUsuarios{
 					$nuevoAncho = 500;
 					$nuevoAlto = 500;
 
-					/*=============================================
-					CREAMOS EL DIRECTORIO DONDE VAMOS A GUARDAR LA FOTO DEL USUARIO
-					=============================================*/
+					/*CREAMOS EL DIRECTORIO DONDE VAMOS A GUARDAR LA FOTO DEL USUARIO*/
 
 					$directorio = "vistas/img/usuarios/".$_POST["editarUsuario"];
 
-					/*=============================================
-					PRIMERO PREGUNTAMOS SI EXISTE OTRA IMAGEN EN LA BD
-					=============================================*/
+					/*PRIMERO PREGUNTAMOS SI EXISTE OTRA IMAGEN EN LA BD*/
 
 					if(!empty($_POST["fotoActual"])){
 
@@ -273,15 +262,11 @@ class ControladorUsuarios{
 
 					}	
 
-					/*=============================================
-					DE ACUERDO AL TIPO DE IMAGEN APLICAMOS LAS FUNCIONES POR DEFECTO DE PHP
-					=============================================*/
+					/*DE ACUERDO AL TIPO DE IMAGEN APLICAMOS LAS FUNCIONES POR DEFECTO DE PHP*/
 
 					if($_FILES["editarFoto"]["type"] == "image/jpeg"){
 
-						/*=============================================
-						GUARDAMOS LA IMAGEN EN EL DIRECTORIO
-						=============================================*/
+						/*GUARDAMOS LA IMAGEN EN EL DIRECTORIO*/
 
 						$aleatorio = mt_rand(100,999);
 
@@ -299,9 +284,7 @@ class ControladorUsuarios{
 
 					if($_FILES["editarFoto"]["type"] == "image/png"){
 
-						/*=============================================
-						GUARDAMOS LA IMAGEN EN EL DIRECTORIO
-						=============================================*/
+						/*GUARDAMOS LA IMAGEN EN EL DIRECTORIO*/
 
 						$aleatorio = mt_rand(100,999);
 
@@ -411,9 +394,7 @@ class ControladorUsuarios{
 
 	}
 
-	/*=============================================
-	BORRAR USUARIO
-	=============================================*/
+	/*BORRAR USUARIO*/
 
 	static public function ctrBorrarUsuario(){
 

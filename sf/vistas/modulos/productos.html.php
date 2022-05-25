@@ -66,7 +66,7 @@
             <td>20</td>
             <td>$ 5.00</td>
             <td>$ 10.00</td>
-            <td>2017-12-11 12:05:32</td>
+            <td>2022-5-11 12:05:32</td>
             <td>
 
               <div class="btn-group">
@@ -91,7 +91,7 @@
             <td>20</td>
             <td>$ 5.00</td>
             <td>$ 10.00</td>
-            <td>2017-12-11 12:05:32</td>
+            <td>2022-5-11 12:05:32</td>
             <td>
 
               <div class="btn-group">
@@ -115,7 +115,7 @@
             <td>20</td>
             <td>$ 5.00</td>
             <td>$ 10.00</td>
-            <td>2017-12-11 12:05:32</td>
+            <td>2022-5-11 12:05:32</td>
             <td>
 
               <div class="btn-group">
@@ -144,9 +144,7 @@
 
 </div>
 
-<!--=====================================
-MODAL AGREGAR PRODUCTO
-======================================-->
+<!--MODAL AGREGAR PRODUCTO-->
 
 <div id="modalAgregarProducto" class="modal fade" role="dialog">
   
@@ -156,9 +154,7 @@ MODAL AGREGAR PRODUCTO
 
       <form role="form" method="post" enctype="multipart/form-data">
 
-        <!--=====================================
-        CABEZA DEL MODAL
-        ======================================-->
+        <!--CABEZA DEL MODAL-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -168,9 +164,7 @@ MODAL AGREGAR PRODUCTO
 
         </div>
 
-        <!--=====================================
-        CUERPO DEL MODAL
-        ======================================-->
+        <!--CUERPO DEL MODAL-->
 
         <div class="modal-body">
 
@@ -184,7 +178,7 @@ MODAL AGREGAR PRODUCTO
               
                 <span class="input-group-addon"><i class="fa fa-code"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoCodigo" placeholder="Ingresar código" required>
+                <input type="number" class="form-control input-lg" name="nuevoCodigo" placeholder="Ingresar código" required>
 
               </div>
 
@@ -324,9 +318,7 @@ MODAL AGREGAR PRODUCTO
 
         </div>
 
-        <!--=====================================
-        PIE DEL MODAL
-        ======================================-->
+        <!--PIE DEL MODAL-->
 
         <div class="modal-footer">
 

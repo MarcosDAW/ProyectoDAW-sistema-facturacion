@@ -62,7 +62,7 @@
             <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
             <td>Administrador</td>
             <td><button class="btn btn-success btn-xs">Activado</button></td>
-            <td>2017-12-11 12:05:32</td>
+            <td>2022-5-11 12:05:32</td>
             <td>
 
               <div class="btn-group">
@@ -84,7 +84,7 @@
             <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
             <td>Administrador</td>
             <td><button class="btn btn-success btn-xs">Activado</button></td>
-            <td>2017-12-11 12:05:32</td>
+            <td>2022-5-11 12:05:32</td>
             <td>
 
               <div class="btn-group">
@@ -106,7 +106,7 @@
             <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
             <td>Administrador</td>
             <td><button class="btn btn-danger btn-xs">Desactivado</button></td>
-            <td>2017-12-11 12:05:32</td>
+            <td>2022-5-11 12:05:32</td>
             <td>
 
               <div class="btn-group">
@@ -133,9 +133,9 @@
 
 </div>
 
-<!--=====================================
+<!--.
 MODAL AGREGAR USUARIO
-======================================-->
+.=-->
 
 <div id="modalAgregarUsuario" class="modal fade" role="dialog">
   
@@ -145,9 +145,9 @@ MODAL AGREGAR USUARIO
 
       <form role="form" method="post" enctype="multipart/form-data">
 
-        <!--=====================================
+        <!--.
         CABEZA DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -157,9 +157,9 @@ MODAL AGREGAR USUARIO
 
         </div>
 
-        <!--=====================================
+        <!--.
         CUERPO DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-body">
 
@@ -249,9 +249,9 @@ MODAL AGREGAR USUARIO
 
         </div>
 
-        <!--=====================================
+        <!--.
         PIE DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-footer">
 

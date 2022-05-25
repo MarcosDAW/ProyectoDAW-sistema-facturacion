@@ -1,6 +1,6 @@
-/*=============================================
+/*-
 EDITAR CATEGORIA
-=============================================*/
+-*/
 $(".tablas").on("click", ".btnEditarCategoria", function(){
 
 	var idCategoria = $(this).attr("idCategoria");
@@ -28,9 +28,9 @@ $(".tablas").on("click", ".btnEditarCategoria", function(){
 
 })
 
-/*=============================================
+/*-
 ELIMINAR CATEGORIA
-=============================================*/
+-*/
 $(".tablas").on("click", ".btnEliminarCategoria", function(){
 
 	 var idCategoria = $(this).attr("idCategoria");

@@ -18,9 +18,9 @@ session_start();
 
   <link rel="icon" href="vistas/img/plantilla/icono-negro.ico">
 
-   <!--=====================================
+   <!---
   PLUGINS DE CSS
-  ======================================-->
+  -=-->
 
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="vistas/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -52,9 +52,9 @@ session_start();
   <!-- Morris chart -->
   <link rel="stylesheet" href="vistas/bower_components/morris.js/morris.css">
 
-  <!--=====================================
+  <!---
   PLUGINS DE JAVASCRIPT
-  ======================================-->
+  -=-->
 
   <!-- jQuery 3 -->
   <script src="vistas/bower_components/jquery/dist/jquery.min.js"></script>
@@ -106,9 +106,9 @@ session_start();
 
 </head>
 
-<!--=====================================
+<!---
 CUERPO DOCUMENTO
-======================================-->
+-=-->
 
 <body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">
  
@@ -118,21 +118,21 @@ CUERPO DOCUMENTO
 
    echo '<div class="wrapper">';
 
-    /*=============================================
+    /*-
     CABEZOTE
-    =============================================*/
+    -*/
 
     include "modulos/cabezote.php";
 
-    /*=============================================
+    /*-
     MENU
-    =============================================*/
+    -*/
 
     include "modulos/menu.php";
 
-    /*=============================================
+    /*-
     CONTENIDO
-    =============================================*/
+    -*/
 
     if(isset($_GET["ruta"])){
 
@@ -161,9 +161,9 @@ CUERPO DOCUMENTO
 
     }
 
-    /*=============================================
+    /*-
     FOOTER
-    =============================================*/
+    -*/
 
     include "modulos/footer.php";
 

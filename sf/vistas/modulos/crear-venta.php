@@ -38,9 +38,9 @@ if($_SESSION["perfil"] == "Especial"){
 
     <div class="row">
 
-      <!--=====================================
+      <!--.
       EL FORMULARIO
-      ======================================-->
+      .=-->
       
       <div class="col-lg-5 col-xs-12">
         
@@ -54,9 +54,9 @@ if($_SESSION["perfil"] == "Especial"){
   
               <div class="box">
 
-                <!--=====================================
+                <!--.
                 ENTRADA DEL VENDEDOR
-                ======================================-->
+                .=-->
             
                 <div class="form-group">
                 
@@ -72,9 +72,9 @@ if($_SESSION["perfil"] == "Especial"){
 
                 </div> 
 
-                <!--=====================================
+                <!--.
                 ENTRADA DEL CÓDIGO
-                ======================================--> 
+                .=--> 
 
                 <div class="form-group">
                   
@@ -118,9 +118,9 @@ if($_SESSION["perfil"] == "Especial"){
                 
                 </div>
 
-                <!--=====================================
+                <!--.
                 ENTRADA DEL CLIENTE
-                ======================================--> 
+                .=--> 
 
                 <div class="form-group">
                   
@@ -155,9 +155,9 @@ if($_SESSION["perfil"] == "Especial"){
                 
                 </div>
 
-                <!--=====================================
+                <!--.
                 ENTRADA PARA AGREGAR PRODUCTO
-                ======================================--> 
+                .=--> 
 
                 <div class="form-group row nuevoProducto">
 
@@ -167,9 +167,9 @@ if($_SESSION["perfil"] == "Especial"){
 
                 <input type="hidden" id="listaProductos" name="listaProductos">
 
-                <!--=====================================
+                <!--.
                 BOTÓN PARA AGREGAR PRODUCTO
-                ======================================-->
+                .=-->
 
                 <button type="button" class="btn btn-default hidden-lg btnAgregarProducto">Agregar producto</button>
 
@@ -177,9 +177,9 @@ if($_SESSION["perfil"] == "Especial"){
 
                 <div class="row">
 
-                  <!--=====================================
+                  <!--.
                   ENTRADA IMPUESTOS Y TOTAL
-                  ======================================-->
+                  .=-->
                   
                   <div class="col-xs-8 pull-right">
                     
@@ -241,9 +241,9 @@ if($_SESSION["perfil"] == "Especial"){
 
                 <hr>
 
-                <!--=====================================
+                <!--.
                 ENTRADA MÉTODO DE PAGO
-                ======================================-->
+                .=-->
 
                 <div class="form-group row">
                   
@@ -293,9 +293,9 @@ if($_SESSION["perfil"] == "Especial"){
             
       </div>
 
-      <!--=====================================
+      <!--.
       LA TABLA DE PRODUCTOS
-      ======================================-->
+      .=-->
 
       <div class="col-lg-7 hidden-md hidden-sm hidden-xs">
         
@@ -335,9 +335,9 @@ if($_SESSION["perfil"] == "Especial"){
 
 </div>
 
-<!--=====================================
+<!--.
 MODAL AGREGAR CLIENTE
-======================================-->
+.=-->
 
 <div id="modalAgregarCliente" class="modal fade" role="dialog">
   
@@ -347,9 +347,9 @@ MODAL AGREGAR CLIENTE
 
       <form role="form" method="post">
 
-        <!--=====================================
+        <!--.
         CABEZA DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -359,9 +359,9 @@ MODAL AGREGAR CLIENTE
 
         </div>
 
-        <!--=====================================
+        <!--.
         CUERPO DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-body">
 
@@ -455,9 +455,9 @@ MODAL AGREGAR CLIENTE
 
         </div>
 
-        <!--=====================================
+        <!--.
         PIE DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-footer">
 

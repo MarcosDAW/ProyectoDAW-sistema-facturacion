@@ -45,9 +45,9 @@ $noRepetirFechas = array_unique($arrayFechas);
 
 ?>
 
-<!--=====================================
+<!---
 GRÁFICO DE VENTAS
-======================================-->
+-=-->
 
 
 <div class="box box-solid bg-olive">
@@ -112,5 +112,4 @@ GRÁFICO DE VENTAS
     preUnits         : '$',
     gridTextSize     : 10
   });
-
 </script>

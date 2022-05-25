@@ -111,18 +111,18 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
                     <div class="btn-group">
                         
-                      <button class="btn btn-warning btnEditarUsuario" idUsuario="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarUsuario"><i class="fa fa-pencil"></i></button>
-
-                      <button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-times"></i></button>
-
+                      <button class="btn btn-warning btnEditarUsuario" idUsuario="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarUsuario"><i class="fa fa-pencil"></i></button>';
+                        if($value['id']!=$_SESSION['id']){
+                          echo '<button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-times"></i></button>';
+                        }
+                      
+                      echo '                              
                     </div>  
 
                   </td>
 
                 </tr>';
         }
-
-
         ?> 
 
         </tbody>
@@ -137,9 +137,9 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
 </div>
 
-<!--=====================================
+<!--.
 MODAL AGREGAR USUARIO
-======================================-->
+.=-->
 
 <div id="modalAgregarUsuario" class="modal fade" role="dialog">
   
@@ -149,9 +149,9 @@ MODAL AGREGAR USUARIO
 
       <form role="form" method="post" enctype="multipart/form-data">
 
-        <!--=====================================
+        <!--.
         CABEZA DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -161,9 +161,9 @@ MODAL AGREGAR USUARIO
 
         </div>
 
-        <!--=====================================
+        <!--.
         CUERPO DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-body">
 
@@ -253,9 +253,9 @@ MODAL AGREGAR USUARIO
 
         </div>
 
-        <!--=====================================
+        <!--.
         PIE DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-footer">
 
@@ -280,9 +280,9 @@ MODAL AGREGAR USUARIO
 
 </div>
 
-<!--=====================================
+<!--.
 MODAL EDITAR USUARIO
-======================================-->
+.=-->
 
 <div id="modalEditarUsuario" class="modal fade" role="dialog">
   
@@ -292,9 +292,9 @@ MODAL EDITAR USUARIO
 
       <form role="form" method="post" enctype="multipart/form-data">
 
-        <!--=====================================
+        <!--.
         CABEZA DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -304,9 +304,9 @@ MODAL EDITAR USUARIO
 
         </div>
 
-        <!--=====================================
+        <!--.
         CUERPO DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-body">
 
@@ -400,9 +400,9 @@ MODAL EDITAR USUARIO
 
         </div>
 
-        <!--=====================================
+        <!--.
         PIE DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-footer">
 

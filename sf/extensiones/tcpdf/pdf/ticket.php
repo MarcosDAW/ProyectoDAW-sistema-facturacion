@@ -71,16 +71,16 @@ $bloque1 = <<<EOF
 				Fecha: $fecha
 
 				<br><br>
-				Inventory System
+				Facturation System
 				
 				<br>
-				NIT: 71.759.963-9
+				NIT: 77.777.777-7
 
 				<br>
-				Dirección: Calle 44B 92-11
+				Dirección: Calle Granaina
 
 				<br>
-				Teléfono: 300 786 52 49
+				Teléfono: 111 111 11 11
 
 				<br>
 				FACTURA N.$valorVenta
@@ -130,7 +130,7 @@ $bloque2 = <<<EOF
 	<tr>
 	
 		<td style="width:160px; text-align:right">
-		$ $valorUnitario Und * $item[cantidad]  = $ $precioTotal
+		$ $valorUnitario Unid x $item[cantidad]  = $ $precioTotal
 		<br>
 		</td>
 

@@ -13,9 +13,9 @@ $totalVentas = ControladorProductos::ctrMostrarSumaVentas();
 
 ?>
 
-<!--=====================================
+<!---
 PRODUCTOS MÁS VENDIDOS
-======================================-->
+-=-->
 
 <div class="box box-default">
 	
@@ -45,7 +45,7 @@ PRODUCTOS MÁS VENDIDOS
 
 		  	 	<?php
 
-					for($i = 0; $i < 10; $i++){
+					for($i = 0; $i < count($productos); $i++){
 
 					echo ' <li><i class="fa fa-circle-o text-'.$colores[$i].'"></i> '.$productos[$i]["descripcion"].'</li>';
 

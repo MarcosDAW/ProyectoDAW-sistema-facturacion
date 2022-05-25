@@ -82,9 +82,9 @@ if($_SESSION["perfil"] == "Vendedor"){
 
 </div>
 
-<!--=====================================
+<!--.
 MODAL AGREGAR PRODUCTO
-======================================-->
+.=-->
 
 <div id="modalAgregarProducto" class="modal fade" role="dialog">
   
@@ -94,9 +94,9 @@ MODAL AGREGAR PRODUCTO
 
       <form role="form" method="post" enctype="multipart/form-data">
 
-        <!--=====================================
+        <!--.
         CABEZA DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -106,9 +106,9 @@ MODAL AGREGAR PRODUCTO
 
         </div>
 
-        <!--=====================================
+        <!--.
         CUERPO DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-body">
 
@@ -271,9 +271,9 @@ MODAL AGREGAR PRODUCTO
 
         </div>
 
-        <!--=====================================
+        <!--.
         PIE DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-footer">
 
@@ -298,9 +298,9 @@ MODAL AGREGAR PRODUCTO
 
 </div>
 
-<!--=====================================
+<!--.
 MODAL EDITAR PRODUCTO
-======================================-->
+.=-->
 
 <div id="modalEditarProducto" class="modal fade" role="dialog">
   
@@ -310,9 +310,9 @@ MODAL EDITAR PRODUCTO
 
       <form role="form" method="post" enctype="multipart/form-data">
 
-        <!--=====================================
+        <!--.
         CABEZA DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -322,9 +322,9 @@ MODAL EDITAR PRODUCTO
 
         </div>
 
-        <!--=====================================
+        <!--.
         CUERPO DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-body">
 
@@ -475,9 +475,9 @@ MODAL EDITAR PRODUCTO
 
         </div>
 
-        <!--=====================================
+        <!--.
         PIE DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-footer">
 

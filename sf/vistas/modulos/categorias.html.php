@@ -122,9 +122,9 @@
 
 </div>
 
-<!--=====================================
+<!--.
 MODAL AGREGAR USUARIO
-======================================-->
+.=-->
 
 <div id="modalAgregarCategoria" class="modal fade" role="dialog">
   
@@ -134,9 +134,9 @@ MODAL AGREGAR USUARIO
 
       <form role="form" method="post">
 
-        <!--=====================================
+        <!--.
         CABEZA DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -146,9 +146,9 @@ MODAL AGREGAR USUARIO
 
         </div>
 
-        <!--=====================================
+        <!--.
         CUERPO DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-body">
 
@@ -172,9 +172,9 @@ MODAL AGREGAR USUARIO
 
         </div>
 
-        <!--=====================================
+        <!--.
         PIE DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-footer">
 

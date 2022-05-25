@@ -66,9 +66,9 @@
 
             <td>1000123</td>
 
-            <td>Juan Villegas</td>
+            <td>Arturito Salvador</td>
 
-            <td>Julio Gómez</td>
+            <td>Sanchez</td>
 
             <td>TC-12412425346</td>
 
@@ -76,7 +76,7 @@
 
             <td>$ 1,190.00</td>
 
-            <td>2017-12-11 12:05:32</td>
+            <td>2022-04-11 12:05:32</td>
 
             <td>
 

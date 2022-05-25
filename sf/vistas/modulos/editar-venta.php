@@ -22,9 +22,9 @@
 
     <div class="row">
 
-      <!--=====================================
+      <!--.
       EL FORMULARIO
-      ======================================-->
+      .=-->
       
       <div class="col-lg-5 col-xs-12">
         
@@ -60,9 +60,9 @@
 
                 ?>
 
-                <!--=====================================
+                <!--.
                 ENTRADA DEL VENDEDOR
-                ======================================-->
+                .=-->
             
                 <div class="form-group">
                 
@@ -78,9 +78,9 @@
 
                 </div> 
 
-                <!--=====================================
+                <!--.
                 ENTRADA DEL CÓDIGO
-                ======================================--> 
+                .=--> 
 
                 <div class="form-group">
                   
@@ -94,9 +94,9 @@
                 
                 </div>
 
-                <!--=====================================
+                <!--.
                 ENTRADA DEL CLIENTE
-                ======================================--> 
+                .=--> 
 
                 <div class="form-group">
                   
@@ -131,9 +131,9 @@
                 
                 </div>
 
-                <!--=====================================
+                <!--.
                 ENTRADA PARA AGREGAR PRODUCTO
-                ======================================--> 
+                .=--> 
 
                 <div class="form-group row nuevoProducto">
 
@@ -193,9 +193,9 @@
 
                 <input type="hidden" id="listaProductos" name="listaProductos">
 
-                <!--=====================================
+                <!--.
                 BOTÓN PARA AGREGAR PRODUCTO
-                ======================================-->
+                .=-->
 
                 <button type="button" class="btn btn-default hidden-lg btnAgregarProducto">Agregar producto</button>
 
@@ -203,9 +203,9 @@
 
                 <div class="row">
 
-                  <!--=====================================
+                  <!--.
                   ENTRADA IMPUESTOS Y TOTAL
-                  ======================================-->
+                  .=-->
                   
                   <div class="col-xs-8 pull-right">
                     
@@ -267,9 +267,9 @@
 
                 <hr>
 
-                <!--=====================================
+                <!--.
                 ENTRADA MÉTODO DE PAGO
-                ======================================-->
+                .=-->
 
                 <div class="form-group row">
                   
@@ -319,9 +319,9 @@
             
       </div>
 
-      <!--=====================================
+      <!--.
       LA TABLA DE PRODUCTOS
-      ======================================-->
+      .=-->
 
       <div class="col-lg-7 hidden-md hidden-sm hidden-xs">
         
@@ -361,9 +361,9 @@
 
 </div>
 
-<!--=====================================
+<!--.
 MODAL AGREGAR CLIENTE
-======================================-->
+.=-->
 
 <div id="modalAgregarCliente" class="modal fade" role="dialog">
   
@@ -373,9 +373,9 @@ MODAL AGREGAR CLIENTE
 
       <form role="form" method="post">
 
-        <!--=====================================
+        <!--.
         CABEZA DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -385,9 +385,9 @@ MODAL AGREGAR CLIENTE
 
         </div>
 
-        <!--=====================================
+        <!--.
         CUERPO DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-body">
 
@@ -481,9 +481,9 @@ MODAL AGREGAR CLIENTE
 
         </div>
 
-        <!--=====================================
+        <!--.
         PIE DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-footer">
 

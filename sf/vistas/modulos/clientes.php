@@ -140,9 +140,9 @@ if($_SESSION["perfil"] == "Especial"){
 
 </div>
 
-<!--=====================================
+<!--.
 MODAL AGREGAR CLIENTE
-======================================-->
+.=-->
 
 <div id="modalAgregarCliente" class="modal fade" role="dialog">
   
@@ -152,9 +152,9 @@ MODAL AGREGAR CLIENTE
 
       <form role="form" method="post">
 
-        <!--=====================================
+        <!--.
         CABEZA DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -164,9 +164,9 @@ MODAL AGREGAR CLIENTE
 
         </div>
 
-        <!--=====================================
+        <!--.
         CUERPO DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-body">
 
@@ -260,9 +260,9 @@ MODAL AGREGAR CLIENTE
 
         </div>
 
-        <!--=====================================
+        <!--.
         PIE DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-footer">
 
@@ -287,9 +287,9 @@ MODAL AGREGAR CLIENTE
 
 </div>
 
-<!--=====================================
+<!--.
 MODAL EDITAR CLIENTE
-======================================-->
+.=-->
 
 <div id="modalEditarCliente" class="modal fade" role="dialog">
   
@@ -299,9 +299,9 @@ MODAL EDITAR CLIENTE
 
       <form role="form" method="post">
 
-        <!--=====================================
+        <!--.
         CABEZA DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -311,9 +311,9 @@ MODAL EDITAR CLIENTE
 
         </div>
 
-        <!--=====================================
+        <!--.
         CUERPO DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-body">
 
@@ -407,9 +407,9 @@ MODAL EDITAR CLIENTE
 
         </div>
 
-        <!--=====================================
+        <!--.
         PIE DEL MODAL
-        ======================================-->
+        .=-->
 
         <div class="modal-footer">
 

@@ -62,23 +62,23 @@
 
             <td>1</td>
 
-            <td>Juan Villegas</td>
+            <td>Marcos</td>
 
             <td>8161123</td>
 
-            <td>juan@hotmail.com</td>
+            <td>ejemplo@hotmail.com</td>
 
-            <td>555 57 67</td>
+            <td>111 22 33</td>
 
-            <td>calle 27 # 40 - 36</td>
+            <td>calle 33</td>
 
-            <td>1982-15-11</td>
+            <td>1992-12-16</td>
 
-            <td>2017-12-11 12:05:32</td>
+            <td>2022-05-11 12:05:32</td>
 
-            <td>35</td>
+            <td>30</td>
 
-            <td>2017-12-11 12:05:32</td>
+            <td>2022-02-11 12:05:32</td>
 
             <td>
 
