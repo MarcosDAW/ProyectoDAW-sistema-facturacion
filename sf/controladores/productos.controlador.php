@@ -46,7 +46,7 @@ class ControladorProductos{
 
 					if($_FILES["nuevaImagen"]["type"] == "image/jpeg"){
 
-						/*GUARDAMOS LA IMAGEN EN EL DIRECTORIO*/
+						/*GUARDO LA IMAGEN EN EL DIRECTORIO*/
 
 						$aleatorio = mt_rand(100,999);
 
@@ -64,7 +64,7 @@ class ControladorProductos{
 
 					if($_FILES["nuevaImagen"]["type"] == "image/png"){
 
-						/*GUARDAMOS LA IMAGEN EN EL DIRECTORIO*/
+						/*GUARDO LA IMAGEN EN EL DIRECTORIO*/
 
 						$aleatorio = mt_rand(100,999);
 

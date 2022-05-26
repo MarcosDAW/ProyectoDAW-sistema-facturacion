@@ -126,7 +126,7 @@ class ControladorUsuarios{
 
 					if($_FILES["nuevaFoto"]["type"] == "image/png"){
 
-						/*GUARDAMOS LA IMAGEN EN EL DIRECTORIO*/
+						/*GUARDO LA IMAGEN EN EL DIRECTORIO*/
 
 						$aleatorio = mt_rand(100,999);
 
@@ -246,11 +246,11 @@ class ControladorUsuarios{
 					$nuevoAncho = 500;
 					$nuevoAlto = 500;
 
-					/*CREAMOS EL DIRECTORIO DONDE VAMOS A GUARDAR LA FOTO DEL USUARIO*/
+					/*CREO EL DIRECTORIO DONDE VOY A GUARDAR LA FOTO DEL USUARIO*/
 
 					$directorio = "vistas/img/usuarios/".$_POST["editarUsuario"];
 
-					/*PRIMERO PREGUNTAMOS SI EXISTE OTRA IMAGEN EN LA BD*/
+					/*PRIMERO PREGUNTO SI EXISTE OTRA IMAGEN EN LA BD*/
 
 					if(!empty($_POST["fotoActual"])){
 
@@ -262,11 +262,11 @@ class ControladorUsuarios{
 
 					}	
 
-					/*DE ACUERDO AL TIPO DE IMAGEN APLICAMOS LAS FUNCIONES POR DEFECTO DE PHP*/
+					/*DE ACUERDO AL TIPO DE IMAGEN APLICO LAS FUNCIONES POR DEFECTO DE PHP*/
 
 					if($_FILES["editarFoto"]["type"] == "image/jpeg"){
 
-						/*GUARDAMOS LA IMAGEN EN EL DIRECTORIO*/
+						/*GUARDO LA IMAGEN EN EL DIRECTORIO*/
 
 						$aleatorio = mt_rand(100,999);
 
@@ -284,7 +284,7 @@ class ControladorUsuarios{
 
 					if($_FILES["editarFoto"]["type"] == "image/png"){
 
-						/*GUARDAMOS LA IMAGEN EN EL DIRECTORIO*/
+						/*GUARDO LA IMAGEN EN EL DIRECTORIO*/
 
 						$aleatorio = mt_rand(100,999);
 

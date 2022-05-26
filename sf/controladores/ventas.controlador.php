@@ -143,17 +143,17 @@ class ControladorVentas{
 
 	}
 
-	/*=============================================
+	/*-
 	EDITAR VENTA
-	=============================================*/
+	-*/
 
 	static public function ctrEditarVenta(){
 
 		if(isset($_POST["editarVenta"])){
 
-			/*=============================================
+			/*-
 			FORMATEAR TABLA DE PRODUCTOS Y LA DE CLIENTES
-			=============================================*/
+			-*/
 			$tabla = "ventas";
 
 			$item = "codigo";
@@ -161,9 +161,9 @@ class ControladorVentas{
 
 			$traerVenta = ModeloVentas::mdlMostrarVentas($tabla, $item, $valor);
 
-			/*=============================================
+			/*-
 			REVISAR SI VIENE PRODUCTOS EDITADOS
-			=============================================*/
+			-*/
 
 			if($_POST["listaProductos"] == ""){
 
@@ -219,9 +219,9 @@ class ControladorVentas{
 
 				$comprasCliente = ModeloClientes::mdlActualizarCliente($tablaClientes, $item1a, $valor1a, $valorCliente);
 
-				/*=============================================
+				/*-
 				ACTUALIZAR LAS COMPRAS DEL CLIENTE Y REDUCIR EL STOCK Y AUMENTAR LAS VENTAS DE LOS PRODUCTOS
-				=============================================*/
+				-*/
 
 				$listaProductos_2 = json_decode($listaProductos, true);
 
@@ -276,9 +276,9 @@ class ControladorVentas{
 
 			}
 
-			/*=============================================
+			/*-
 			GUARDAR CAMBIOS DE LA COMPRA
-			=============================================*/	
+			-*/	
 
 			$datos = array("id_vendedor"=>$_POST["idVendedor"],
 						   "id_cliente"=>$_POST["seleccionarCliente"],
@@ -320,9 +320,9 @@ class ControladorVentas{
 	}
 
 
-	/*=============================================
+	/*-
 	ELIMINAR VENTA
-	=============================================*/
+	-*/
 
 	static public function ctrEliminarVenta(){
 
@@ -335,9 +335,9 @@ class ControladorVentas{
 
 			$traerVenta = ModeloVentas::mdlMostrarVentas($tabla, $item, $valor);
 
-			/*=============================================
+			/*-
 			ACTUALIZAR FECHA ÚLTIMA COMPRA
-			=============================================*/
+			-*/
 
 			$tablaClientes = "clientes";
 
@@ -389,9 +389,9 @@ class ControladorVentas{
 
 			}
 
-			/*=============================================
+			/*-
 			FORMATEAR TABLA DE PRODUCTOS Y LA DE CLIENTES
-			=============================================*/
+			-*/
 
 			$productos =  json_decode($traerVenta["productos"], true);
 
@@ -433,9 +433,9 @@ class ControladorVentas{
 
 			$comprasCliente = ModeloClientes::mdlActualizarCliente($tablaClientes, $item1a, $valor1a, $valorCliente);
 
-			/*=============================================
+			/*-
 			ELIMINAR VENTA
-			=============================================*/
+			-*/
 
 			$respuesta = ModeloVentas::mdlEliminarVenta($tabla, $_GET["idVenta"]);
 
@@ -463,9 +463,9 @@ class ControladorVentas{
 
 	}
 
-	/*=============================================
+	/*-
 	RANGO FECHAS
-	=============================================*/	
+	-*/	
 
 	static public function ctrRangoFechasVentas($fechaInicial, $fechaFinal){
 
@@ -477,9 +477,9 @@ class ControladorVentas{
 		
 	}
 
-	/*=============================================
+	/*-
 	DESCARGAR EXCEL
-	=============================================*/
+	-*/
 
 	public function ctrDescargarReporte(){
 
@@ -501,9 +501,9 @@ class ControladorVentas{
 			}
 
 
-			/*=============================================
-			CREAMOS EL ARCHIVO DE EXCEL
-			=============================================*/
+			/*-
+			CREO EL ARCHIVO DE EXCEL
+			-*/
 
 			$Name = $_GET["reporte"].'.xls';
 
@@ -577,9 +577,9 @@ class ControladorVentas{
 	}
 
 
-	/*=============================================
+	/*-
 	SUMA TOTAL VENTAS
-	=============================================*/
+	-*/
 
 	public function ctrSumaTotalVentas(){
 
@@ -591,9 +591,9 @@ class ControladorVentas{
 
 	}
 
-	/*=============================================
+	/*-
 	DESCARGAR XML
-	=============================================*/
+	-*/
 
 	static public function ctrDescargarXML(){
 
