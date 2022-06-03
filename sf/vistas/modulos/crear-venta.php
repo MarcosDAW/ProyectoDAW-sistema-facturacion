@@ -202,11 +202,11 @@ if($_SESSION["perfil"] == "Especial"){
                             
                             <div class="input-group">
                            
-                              <input type="number" class="form-control input-lg" min="0" id="nuevoImpuestoVenta" name="nuevoImpuestoVenta" placeholder="0" required>
+                              <input type="number" class="form-control input-lg" min="0" value="21" id="nuevoImpuestoVenta" name="nuevoImpuestoVenta" placeholder="0" readonly>
 
-                               <input type="hidden" name="nuevoPrecioImpuesto" id="nuevoPrecioImpuesto" required>
+                               <input type="hidden" name="nuevoPrecioImpuesto" id="nuevoPrecioImpuesto">
 
-                               <input type="hidden" name="nuevoPrecioNeto" id="nuevoPrecioNeto" required>
+                               <input type="hidden" name="nuevoPrecioNeto" id="nuevoPrecioNeto">
 
                               <span class="input-group-addon"><i class="fa fa-percent"></i></span>
                         
@@ -240,7 +240,7 @@ if($_SESSION["perfil"] == "Especial"){
                 </div>
 
                 <hr>
-
+                      
                 <!--.
                 ENTRADA MÉTODO DE PAGO
                 .=-->

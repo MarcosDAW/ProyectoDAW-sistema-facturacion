@@ -31,13 +31,13 @@ PRODUCTOS MÁS VENDIDOS
 
 	        <div class="col-md-7">
 
-	 			<div class="chart-responsive">
-	            
-	            	<canvas id="pieChart" height="150"></canvas>
-	          
-	          	</div>
+            <div class="chart-responsive">
+                
+                  <canvas id="pieChart" height="150"></canvas>
+              
+                </div>
 
-	        </div>
+          </div>
 
 		    <div class="col-md-5">
 		      	

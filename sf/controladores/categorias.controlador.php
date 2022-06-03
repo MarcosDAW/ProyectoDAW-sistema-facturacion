@@ -146,15 +146,15 @@ class ControladorCategorias{
 			$tabla ="Categorias";
 			$datos = $_GET["idCategoria"];
 
-			$respuesta = ModeloCategorias::mdlBorrarCategoria($tabla, $datos);
-
-			if($respuesta == "ok"){
-
-				echo'<script>
+			$stmt = Conexion::conectar()->query("SELECT count(p.id) FROM productos p INNER JOIN categorias c ON p.id_categoria = c.id AND c.id =".$datos);
+			$count = $stmt->fetchColumn();
+			if($count > 0){
+				if($count > 1){
+					echo'<script>
 
 					swal({
-						  type: "success",
-						  title: "La categoría ha sido borrada correctamente",
+						  type: "error",
+						  title: "existen '.$count.' productos con esa categoría",
 						  showConfirmButton: true,
 						  confirmButtonText: "Cerrar"
 						  }).then(function(result){
@@ -166,6 +166,46 @@ class ControladorCategorias{
 								})
 
 					</script>';
+				}else{
+					echo'<script>
+
+					swal({
+						  type: "error",
+						  title: "existe '.$count.' producto con esa categoría",
+						  showConfirmButton: true,
+						  confirmButtonText: "Cerrar"
+						  }).then(function(result){
+									if (result.value) {
+
+									window.location = "categorias";
+
+									}
+								})
+
+					</script>';
+				}
+				
+			}else{
+				$respuesta = ModeloCategorias::mdlBorrarCategoria($tabla, $datos);
+				if($respuesta == "ok"){
+
+					echo'<script>
+	
+						swal({
+							  type: "success",
+							  title: "La categoría ha sido borrada correctamente",
+							  showConfirmButton: true,
+							  confirmButtonText: "Cerrar"
+							  }).then(function(result){
+										if (result.value) {
+	
+										window.location = "categorias";
+	
+										}
+									})
+	
+						</script>';
+				}
 			}
 		}
 		

@@ -30,6 +30,7 @@ class AjaxProductos{
   public $traerProductos;
   public $nombreProducto;
 
+
   public function ajaxEditarProducto(){
 
     if($this->traerProductos == "ok"){
@@ -92,6 +93,7 @@ if(isset($_POST["idProducto"])){
 
 }
 
+
 /*TRAER PRODUCTO*/ 
 
 if(isset($_POST["traerProductos"])){
@@ -111,6 +113,7 @@ if(isset($_POST["nombreProducto"])){
   $traerProductos -> ajaxEditarProducto();
 
 }
+
 
 
 

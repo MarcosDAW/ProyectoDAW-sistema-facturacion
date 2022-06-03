@@ -52,41 +52,32 @@ $('.tablaProductos').DataTable( {
 /*=============================================
 CAPTURANDO LA CATEGORIA PARA ASIGNAR CÓDIGO
 =============================================*/
-// $("#nuevaCategoria").change(function(){
+ $("#nuevoCodigo").change(function(){
 
-// 	var idCategoria = $(this).val();
+ 	var idCodigo = $("#nuevoCodigo").val();
 
-// 	var datos = new FormData();
-//   	datos.append("idCategoria", idCategoria);
+   	$.ajax({
 
-//   	$.ajax({
+      url:"ajax/productos.ajax.php",
+       method: "POST",
+       data: datos,
+       cache: false,
+       contentType: false,
+       processData: false,
+       dataType:"json",
+       success:function(respuesta){
 
-//       url:"ajax/productos.ajax.php",
-//       method: "POST",
-//       data: datos,
-//       cache: false,
-//       contentType: false,
-//       processData: false,
-//       dataType:"json",
-//       success:function(respuesta){
+       	if(!respuesta){
+			$("#nuevoCodigo").parent().after('<div class="alert alert-warning">Este código ya existe en la base de datos</div>');
+			$("#nuevoCodigo").val("");
 
-//       	if(!respuesta){
-
-//       		var nuevoCodigo = idCategoria+"01";
-//       		$("#nuevoCodigo").val(nuevoCodigo);
-
-//       	}else{
-
-//       		var nuevoCodigo = Number(respuesta["codigo"]) + 1;
-//           	$("#nuevoCodigo").val(nuevoCodigo);
-
-//       	}
+      	}
                 
-//       }
+       }
 
-//   	})
+   	})
 
-// })
+ })
 
 /*=============================================
 AGREGANDO PRECIO DE VENTA

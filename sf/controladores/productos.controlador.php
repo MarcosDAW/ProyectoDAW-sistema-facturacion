@@ -84,14 +84,15 @@ class ControladorProductos{
 
 				$tabla = "productos";
 
-				$datos = array("id_categoria" => $_POST["nuevaCategoria"],
+				
+				$datos = array("id_categoria" => $_POST["v"],
 							   "codigo" => $_POST["nuevoCodigo"],
 							   "descripcion" => $_POST["nuevaDescripcion"],
 							   "stock" => $_POST["nuevoStock"],
 							   "precio_compra" => $_POST["nuevoPrecioCompra"],
 							   "precio_venta" => $_POST["nuevoPrecioVenta"],
 							   "imagen" => $ruta);
-
+				
 				$respuesta = ModeloProductos::mdlIngresarProducto($tabla, $datos);
 
 				if($respuesta == "ok"){
@@ -288,7 +289,7 @@ class ControladorProductos{
 				rmdir('vistas/img/productos/'.$_GET["codigo"]);
 
 			}
-
+			
 			$respuesta = ModeloProductos::mdlEliminarProducto($tabla, $datos);
 
 			if($respuesta == "ok"){
