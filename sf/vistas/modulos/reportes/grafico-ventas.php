@@ -110,6 +110,6 @@ GRÁFICO DE VENTAS
     gridLineColor    : '#efefef',
     gridTextFamily   : 'Open Sans',
     preUnits         : '$',
-    gridTextSize     : 10
+    gridTextSize     : 15
   });
 </script>

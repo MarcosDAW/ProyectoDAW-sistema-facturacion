@@ -85,7 +85,7 @@ class ControladorProductos{
 				$tabla = "productos";
 
 				
-				$datos = array("id_categoria" => $_POST["v"],
+				$datos = array("id_categoria" => $_POST["nuevaCategoria"],
 							   "codigo" => $_POST["nuevoCodigo"],
 							   "descripcion" => $_POST["nuevaDescripcion"],
 							   "stock" => $_POST["nuevoStock"],
