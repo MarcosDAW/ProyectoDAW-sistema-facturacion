@@ -78,7 +78,7 @@ $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
           	var precio = respuesta["precio_venta"];
 
           	/*=============================================
-          	EVITAR AGREGAR PRODUTO CUANDO EL STOCK ESTÁ EN CERO
+          	EVITAR AGREGAR PRODUCTO CUANDO EL STOCK ESTÁ EN CERO
           	=============================================*/
 
           	if(stock == 0){

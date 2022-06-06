@@ -97,8 +97,12 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
                   echo '<td>'.$value["perfil"].'</td>';
 
                   if($value["estado"] != 0){
-
-                    echo '<td><button class="btn btn-success btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario="0">Activado</button></td>';
+                    if($value['id']!=$_SESSION['id']){
+                      echo '<td><button class="btn btn-success btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario="0">Activado</button></td>';
+                    }else{
+                      echo '<td><button class="btn btn-success btn-xs" >Activado</button></td>';
+                    }
+                    
 
                   }else{
 
@@ -112,9 +116,9 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
                     <div class="btn-group">
                         
                       <button class="btn btn-warning btnEditarUsuario" idUsuario="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarUsuario"><i class="fa fa-pencil"></i></button>';
-                        if($value['id']!=$_SESSION['id']){
+                        /*if($value['id']!=$_SESSION['id']){
                           echo '<button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-times"></i></button>';
-                        }
+                        }*/
                       
                       echo '                              
                     </div>  
