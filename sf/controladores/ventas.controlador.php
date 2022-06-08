@@ -104,7 +104,7 @@ class ControladorVentas{
 			/*GUARDAR LA COMPRA*/	
 
 			$tabla = "ventas";
-
+			
 			$datos = array("id_vendedor"=>$_POST["idVendedor"],
 						   "id_cliente"=>$_POST["seleccionarCliente"],
 						   "codigo"=>$_POST["nuevaVenta"],

@@ -249,11 +249,10 @@ MODAL AGREGAR CLIENTE
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span> 
-
                 <input type="text" class="form-control input-lg" name="nuevaFechaNacimiento" placeholder="Ingresar fecha nacimiento" data-inputmask="'alias': 'yyyy/mm/dd'" required>
-
+                
               </div>
-
+              <input style="width:200px;margin-left:10%;border:none;" type="text" id="fecha" name="fecha" placeholder="año/mes/dia    0000/00/00" readonly/>
             </div>
   
           </div>

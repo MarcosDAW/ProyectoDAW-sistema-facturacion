@@ -19,7 +19,7 @@ PRODUCTOS MÁS VENDIDOS
 
 <div class="box box-default">
 
-  <div class="box-header with-border">
+  <div style="margin-bottom:5%;" class="box-header with-border">
 
     <h3 class="box-title">Productos más vendidos</h3>
 
@@ -29,7 +29,7 @@ PRODUCTOS MÁS VENDIDOS
 
     <div class="row">
 
-      <div class="col-md-7">
+      <div class="col-md-5">
 
         <div class="chart-responsive">
 
@@ -39,7 +39,7 @@ PRODUCTOS MÁS VENDIDOS
 
       </div>
 
-      <div class="col-md-5">
+      <div class="col-md-2">
 
         <ul class="chart-legend clearfix">
 

@@ -446,7 +446,7 @@ MODAL AGREGAR CLIENTE
                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span> 
 
                 <input type="text" class="form-control input-lg" name="nuevaFechaNacimiento" placeholder="Ingresar fecha nacimiento" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required>
-
+                
               </div>
 
             </div>
